@@ -303,7 +303,8 @@ Ref &lt;a href = http://www.ti.com/lit/ds/symlink/lp3988-q1.pdf&gt;datasheet&lt;
 <wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="21"/>
 <wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="21"/>
 <circle x="-1.016" y="1.651" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-2.032" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="15" align="center">&gt;VALUE</text>
 </package>
 <package name="1008">
 <smd name="1" x="-0.975" y="0" dx="0.85" dy="2.3" layer="1"/>
@@ -616,6 +617,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="10.287" y="-0.254" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
 </element>
 <element name="U2" library="bschulz" package="DCU_(R-PDSO-G8)" value="SN74LVC2G241DCU" x="10.795" y="3.683" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="296-32323-1-ND" x="10.795" y="3.683" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="TI" x="10.795" y="3.683" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="SN74LVC2G241DCUT" x="10.795" y="3.683" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="13.736" y="2.826" size="0.6096" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="8.795" y="1.818" size="0.6096" layer="27" font="vector" ratio="15"/>
 </element>
@@ -692,28 +696,28 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="22.86" y="7.874" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="22.86" y="10.414" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="U4" library="bschulz" package="SOT23-5" value="MIC5205" x="27.305" y="4.826" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="" x="27.305" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="MF" value="" x="27.305" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="27.305" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<element name="U4" library="bschulz" package="SOT23-5" value="MIC5205_5V" x="27.305" y="4.826" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="576-1261-1-ND" x="27.305" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="MF" value="Microchip" x="27.305" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="MPN" value="MIC5205-5.0YM5-TR" x="27.305" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="27.305" y="6.731" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="27.178" y="7.112" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C1" library="bschulz_passives" package="C0603" value="" x="27.305" y="2.159" smashed="yes" rot="R180">
+<element name="C1" library="bschulz_passives" package="C0603" value="1uF" x="27.305" y="2.159" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="587-1251-1-ND" x="27.305" y="2.159" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="MF" value="Yaiyo Yuden" x="27.305" y="2.159" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="MPN" value="EMK107BJ105KA-T" x="27.305" y="2.159" size="0.8128" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="NAME" x="27.305" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="27.305" y="3.556" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C2" library="bschulz_passives" package="C0603" value="" x="24.003" y="4.826" smashed="yes" rot="R90">
+<element name="C2" library="bschulz_passives" package="C0603" value="1uF" x="24.003" y="4.826" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="587-1251-1-ND" x="24.003" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="MF" value="Yaiyo Yuden" x="24.003" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="MPN" value="EMK107BJ105KA-T" x="24.003" y="4.826" size="0.8128" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="NAME" x="24.003" y="6.604" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="25.4" y="4.826" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C3" library="bschulz_passives" package="C0603" value="" x="10.287" y="8.509" smashed="yes">
+<element name="C3" library="bschulz_passives" package="C0603" value="0.1uF" x="10.287" y="8.509" smashed="yes">
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="10.287" y="8.509" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="MF" value="Murata" x="10.287" y="8.509" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="10.287" y="8.509" size="0.8128" layer="27" font="vector" ratio="15" display="off"/>
@@ -827,6 +831,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="8.382" y1="7.62" x2="8.382" y2="11.684" width="0.254" layer="16"/>
 <via x="27.305" y="4.826" extent="1-16" drill="0.35"/>
 <wire x1="27.305" y1="4.826" x2="27.305" y2="11.684" width="0.3048" layer="16"/>
+<wire x1="20.828" y1="11.684" x2="21.91" y2="11.303" width="0" layer="19" extent="1-1"/>
+<wire x1="20.828" y1="10.795" x2="20.828" y2="11.684" width="0" layer="19" extent="1-1"/>
+<wire x1="19.842" y1="10.287" x2="20.828" y2="10.795" width="0" layer="19" extent="1-1"/>
+<wire x1="18.542" y1="10.287" x2="19.842" y2="10.287" width="0" layer="19" extent="1-1"/>
+<wire x1="18.095" y1="7.493" x2="18.542" y2="10.287" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="J1" pad="2"/>
@@ -875,6 +884,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="9.525" y1="9.652" x2="5.588" y2="9.652" width="0.6096" layer="1"/>
 <wire x1="9.437" y1="8.509" x2="9.437" y2="9.564" width="0.254" layer="1"/>
 <wire x1="9.437" y1="9.564" x2="9.525" y2="9.652" width="0.254" layer="1"/>
+<wire x1="15.494" y1="9.31" x2="17.242" y2="9.337" width="0" layer="19" extent="1-1"/>
+<wire x1="16.195" y1="7.493" x2="15.494" y2="9.31" width="0" layer="19" extent="1-1"/>
+<wire x1="17.694" y1="5.08" x2="16.195" y2="7.493" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX">
 <contactref element="J1" pad="3"/>
@@ -997,6 +1009,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="21.717" y="9.652"/>
 <vertex x="19.177" y="9.652"/>
 </polygon>
+<wire x1="19.842" y1="9.337" x2="21.185" y2="9.144" width="0" layer="19" extent="1-1"/>
+<wire x1="19.644" y1="5.08" x2="19.842" y2="9.337" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="U2" pad="8"/>
