@@ -161,23 +161,23 @@
 </layers>
 <board>
 <plain>
-<wire x1="10" y1="45.45" x2="10" y2="50.55" width="0" layer="20"/>
-<wire x1="10" y1="50.55" x2="7.55" y2="53" width="0" layer="20" curve="90"/>
-<wire x1="7.55" y1="53" x2="2.45" y2="53" width="0" layer="20"/>
-<wire x1="2.45" y1="53" x2="0" y2="50.55" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="50.55" x2="0" y2="2.45" width="0" layer="20"/>
+<wire x1="10" y1="46.72" x2="10" y2="51.82" width="0" layer="20"/>
+<wire x1="10" y1="51.82" x2="7.55" y2="54.27" width="0" layer="20" curve="90"/>
+<wire x1="7.55" y1="54.27" x2="2.45" y2="54.27" width="0" layer="20"/>
+<wire x1="2.45" y1="54.27" x2="0" y2="51.82" width="0" layer="20" curve="90"/>
+<wire x1="0" y1="51.82" x2="0" y2="2.45" width="0" layer="20"/>
 <wire x1="0" y1="2.45" x2="2.45" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="2.45" y1="0" x2="7.55" y2="0" width="0" layer="20"/>
 <wire x1="7.55" y1="0" x2="10" y2="2.45" width="0" layer="20" curve="90"/>
 <wire x1="10" y1="2.45" x2="10" y2="7.55" width="0" layer="20"/>
 <wire x1="10" y1="7.55" x2="7.55" y2="10" width="0" layer="20" curve="90"/>
 <wire x1="7.55" y1="10" x2="5.45" y2="10" width="0" layer="20"/>
-<wire x1="5.45" y1="43" x2="7.55" y2="43" width="0" layer="20"/>
-<wire x1="7.55" y1="43" x2="10" y2="45.45" width="0" layer="20" curve="90"/>
+<wire x1="5.45" y1="44.27" x2="7.55" y2="44.27" width="0" layer="20"/>
+<wire x1="7.55" y1="44.27" x2="10" y2="46.72" width="0" layer="20" curve="90"/>
 <wire x1="5.45" y1="10" x2="3" y2="12.45" width="0" layer="20" curve="-90"/>
-<wire x1="3" y1="12.45" x2="3" y2="40.55" width="0" layer="20"/>
-<wire x1="3" y1="40.55" x2="5.45" y2="43" width="0" layer="20" curve="-90"/>
-<text x="1.524" y="26.5" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">PowerRailJumper - v0.0
+<wire x1="3" y1="12.45" x2="3" y2="41.82" width="0" layer="20"/>
+<wire x1="3" y1="41.82" x2="5.45" y2="44.27" width="0" layer="20" curve="-90"/>
+<text x="1.524" y="26.5" size="0.8128" layer="21" font="vector" ratio="15" rot="R90" align="center">PowerRailJumper - v1.0
 Break44 - B. Schulz</text>
 </plain>
 <libraries>
@@ -433,20 +433,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="3.175" y="6.985" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
 <attribute name="VALUE" x="1.778" y="5.08" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C2" library="bschulz_passives" package="C0603" value="0.1uF" x="3.175" y="47.879" smashed="yes" rot="R270">
-<attribute name="DIGIKEY" value="490-6051-1-ND" x="-13.335" y="32.639" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="Murata" x="-13.335" y="32.639" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="GCM188R71E104KA57D" x="-13.335" y="32.639" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="3.175" y="49.784" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
-<attribute name="VALUE" x="1.778" y="47.879" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
+<element name="C2" library="bschulz_passives" package="C0603" value="0.1uF" x="3.175" y="49.149" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" value="490-6051-1-ND" x="-13.335" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Murata" x="-13.335" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="GCM188R71E104KA57D" x="-13.335" y="33.909" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="3.175" y="51.054" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="VALUE" x="1.778" y="49.149" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="J1" library="bschulz" package="2X02" value="" x="8.509" y="5.926" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.377" y="7.366" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="3.937" y="7.196" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="J2" library="bschulz" package="2X02" value="" x="8.509" y="49.614" smashed="yes" rot="R270">
-<attribute name="NAME" x="5.377" y="51.054" size="0.6096" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="3.937" y="50.884" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+<element name="J2" library="bschulz" package="2X02" value="" x="8.509" y="50.884" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.377" y="52.324" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="VALUE" x="3.937" y="52.154" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -457,16 +457,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J1" pad="3"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
-<wire x1="4.822" y1="49.614" x2="3.937" y2="48.729" width="0.6096" layer="1"/>
-<wire x1="3.175" y1="48.729" x2="3.937" y2="48.729" width="0.6096" layer="1"/>
-<wire x1="4.822" y1="49.614" x2="5.969" y2="49.614" width="0.6096" layer="1"/>
+<wire x1="4.822" y1="50.884" x2="3.937" y2="49.999" width="0.6096" layer="1"/>
+<wire x1="3.175" y1="49.999" x2="3.937" y2="49.999" width="0.6096" layer="1"/>
+<wire x1="4.822" y1="50.884" x2="5.969" y2="50.884" width="0.6096" layer="1"/>
 <wire x1="3.175" y1="5.93" x2="3.179" y2="5.926" width="0.6096" layer="1"/>
 <wire x1="5.969" y1="5.926" x2="3.179" y2="5.926" width="0.6096" layer="1"/>
 <wire x1="5.969" y1="5.926" x2="8.509" y2="5.926" width="0.6096" layer="16"/>
 <wire x1="5.969" y1="5.926" x2="2.3142" y2="9.5808" width="0.6096" layer="16"/>
-<wire x1="2.3142" y1="45.9592" x2="5.969" y2="49.614" width="0.6096" layer="16"/>
-<wire x1="2.3142" y1="9.5808" x2="2.3142" y2="45.9592" width="0.6096" layer="16"/>
-<wire x1="5.969" y1="49.614" x2="8.509" y2="49.614" width="0.6096" layer="16"/>
+<wire x1="2.3142" y1="47.2292" x2="5.969" y2="50.884" width="0.6096" layer="16"/>
+<wire x1="2.3142" y1="9.5808" x2="2.3142" y2="47.2292" width="0.6096" layer="16"/>
+<wire x1="5.969" y1="50.884" x2="8.509" y2="50.884" width="0.6096" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="J2" pad="4"/>
@@ -475,18 +475,18 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="J1" pad="4"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<wire x1="5.969" y1="47.074" x2="3.22" y2="47.074" width="0.6096" layer="1"/>
+<wire x1="5.969" y1="48.344" x2="3.22" y2="48.344" width="0.6096" layer="1"/>
 <wire x1="5.969" y1="3.386" x2="4.908" y2="3.386" width="0.6096" layer="1"/>
 <wire x1="4.908" y1="3.386" x2="4.064" y2="4.23" width="0.6096" layer="1"/>
 <wire x1="4.064" y1="4.23" x2="3.175" y2="4.23" width="0.6096" layer="1"/>
 <wire x1="5.969" y1="3.386" x2="8.509" y2="3.386" width="0.6096" layer="1"/>
-<wire x1="8.509" y1="47.074" x2="5.969" y2="47.074" width="0.6096" layer="16"/>
+<wire x1="8.509" y1="48.344" x2="5.969" y2="48.344" width="0.6096" layer="16"/>
 <wire x1="3.175" y1="4.23" x2="1.993" y2="4.23" width="0.6096" layer="1"/>
 <wire x1="1.993" y1="4.23" x2="1.143" y2="5.08" width="0.6096" layer="1"/>
-<wire x1="1.143" y1="5.08" x2="1.143" y2="46.101" width="0.6096" layer="1"/>
-<wire x1="1.143" y1="46.101" x2="2.071" y2="47.029" width="0.6096" layer="1"/>
-<wire x1="2.071" y1="47.029" x2="3.175" y2="47.029" width="0.6096" layer="1"/>
-<wire x1="3.175" y1="47.029" x2="3.22" y2="47.074" width="0" layer="19" extent="1-1"/>
+<wire x1="1.143" y1="5.08" x2="1.143" y2="47.371" width="0.6096" layer="1"/>
+<wire x1="1.143" y1="47.371" x2="2.071" y2="48.299" width="0.6096" layer="1"/>
+<wire x1="2.071" y1="48.299" x2="3.175" y2="48.299" width="0.6096" layer="1"/>
+<wire x1="3.175" y1="48.299" x2="3.22" y2="48.344" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
