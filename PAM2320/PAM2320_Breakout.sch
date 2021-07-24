@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -151,7 +151,7 @@
 <packages>
 <package name="PSOP-8">
 <description>&lt;b&gt;PSOP-8&lt;/b&gt;&lt;br&gt;8 pin, SOIC package &lt;br&gt;&lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/PAM2320_June2021_Rev.4-2.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="EP" x="0" y="0" dx="3.6" dy="2.7" layer="1" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="3.6" dy="2.7" layer="1" rot="R270" cream="no"/>
 <smd name="4" x="-2.7" y="-1.905" dx="0.65" dy="1.5" layer="1" rot="R270"/>
 <smd name="3" x="-2.7" y="-0.635" dx="0.65" dy="1.5" layer="1" rot="R270"/>
 <smd name="2" x="-2.7" y="0.635" dx="0.65" dy="1.5" layer="1" rot="R270"/>
@@ -170,6 +170,10 @@
 <wire x1="-1.95" y1="-2.2" x2="-1.7" y2="-2.45" width="0.127" layer="21" curve="90"/>
 <circle x="-2.286" y="2.794" radius="0.179603125" width="0.127" layer="21"/>
 <text x="0" y="-3.048" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="0.127" y1="-1.651" x2="1.27" y2="-0.254" layer="31"/>
+<rectangle x1="-1.27" y1="0.254" x2="-0.127" y2="1.651" layer="31" rot="R180"/>
+<rectangle x1="0.127" y1="0.254" x2="1.27" y2="1.651" layer="31" rot="R180"/>
+<rectangle x1="-1.27" y1="-1.651" x2="-0.127" y2="-0.254" layer="31" rot="R180"/>
 </package>
 <package name="WE-LQS(4X4)">
 <description>Wurth LQS series inductor, with 4mmx4mm package
@@ -1055,6 +1059,20 @@ Right angle, 2 position, female</description>
 <circle x="0" y="0" radius="2.3241" width="0" layer="39"/>
 <circle x="0" y="0" radius="2.7178" width="0.127" layer="21"/>
 </package>
+<package name="WE-HCI(5040)">
+<description>&lt;b&gt;W&amp;uuml;rth HCI 5040&lt;/b&gt; - 5.6x5.3mm&lt;br&gt;&lt;a href =  https://www.we-online.de/katalog/datasheet/744316100.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="P$1" x="-2.05" y="0" dx="1.6" dy="1.9" layer="1" rot="R270"/>
+<smd name="P$2" x="2.05" y="0" dx="1.6" dy="1.9" layer="1" rot="R270"/>
+<wire x1="-2.8" y1="2.4" x2="-2.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-2.8" y1="-2.4" x2="-2.55" y2="-2.65" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.55" y1="-2.65" x2="2.55" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="2.55" y1="-2.65" x2="2.8" y2="-2.4" width="0.127" layer="21" curve="90"/>
+<wire x1="2.8" y1="-2.4" x2="2.8" y2="2.4" width="0.127" layer="21"/>
+<wire x1="2.8" y1="2.4" x2="2.55" y2="2.65" width="0.127" layer="21" curve="90"/>
+<wire x1="2.55" y1="2.65" x2="-2.55" y2="2.65" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="2.65" x2="-2.8" y2="2.4" width="0.127" layer="21" curve="90"/>
+<text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PAM2320">
@@ -1273,6 +1291,15 @@ Right angle, 2 position, female</description>
 </technologies>
 </device>
 <device name="_MAPI_5.4X5.4" package="WE-MAPI(5.4X5.4)">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HCI_5040" package="WE-HCI(5040)">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>

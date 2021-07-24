@@ -3,13 +3,13 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -21,8 +21,8 @@
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -32,17 +32,17 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -64,7 +64,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
@@ -155,16 +155,16 @@
 <wire x1="37.429" y1="0" x2="39.929" y2="2.5" width="0" layer="20" curve="90"/>
 <wire x1="39.929" y1="2.5" x2="39.929" y2="20.35" width="0" layer="20"/>
 <wire x1="39.929" y1="20.35" x2="37.429" y2="22.85" width="0" layer="20" curve="90"/>
-<text x="6.477" y="20.32" size="1.016" layer="51" ratio="15" align="center-left">PAM2320 Breakout
-V0.0
+<text x="6.477" y="20.32" size="1.016" layer="51" font="vector" ratio="15" align="center-left">PAM2320 Breakout
+v0.0
 B. Schulz</text>
-<text x="16.51" y="2.54" size="1.016" layer="51" ratio="15" rot="R90" align="center-left">Break44</text>
-<text x="6.35" y="1.27" size="1.016" layer="51" ratio="15" align="center-left">Input</text>
-<text x="29.21" y="1.27" size="1.016" layer="51" ratio="15" align="center-left">Output</text>
-<text x="7.62" y="7.62" size="1.778" layer="51" ratio="15" rot="R90" align="center">+</text>
-<text x="7.62" y="15.24" size="1.778" layer="51" ratio="15" rot="R90" align="center">-</text>
-<text x="31.75" y="7.62" size="1.778" layer="51" ratio="15" rot="R90" align="center">+</text>
-<text x="31.75" y="15.24" size="1.778" layer="51" ratio="15" rot="R90" align="center">-</text>
+<text x="16.51" y="2.54" size="1.016" layer="51" font="vector" ratio="15" rot="R90" align="center-left">Break44</text>
+<text x="6.35" y="1.27" size="1.016" layer="51" font="vector" ratio="15" align="center-left">Input</text>
+<text x="29.21" y="1.27" size="1.016" layer="51" font="vector" ratio="15" align="center-left">Output</text>
+<text x="7.62" y="7.62" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">+</text>
+<text x="7.62" y="15.24" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">-</text>
+<text x="31.75" y="7.62" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">+</text>
+<text x="31.75" y="15.24" size="1.778" layer="51" font="vector" ratio="15" rot="R90" align="center">-</text>
 </plain>
 <libraries>
 <library name="bschulz_passives">
@@ -235,7 +235,7 @@ B. Schulz</text>
 </package>
 <package name="PSOP-8">
 <description>&lt;b&gt;PSOP-8&lt;/b&gt;&lt;br&gt;8 pin, SOIC package &lt;br&gt;&lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Diodes%20PDFs/PAM2320_June2021_Rev.4-2.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<smd name="EP" x="0" y="0" dx="3.6" dy="2.7" layer="1" rot="R270"/>
+<smd name="EP" x="0" y="0" dx="3.6" dy="2.7" layer="1" rot="R270" cream="no"/>
 <smd name="4" x="-2.7" y="-1.905" dx="0.65" dy="1.5" layer="1" rot="R270"/>
 <smd name="3" x="-2.7" y="-0.635" dx="0.65" dy="1.5" layer="1" rot="R270"/>
 <smd name="2" x="-2.7" y="0.635" dx="0.65" dy="1.5" layer="1" rot="R270"/>
@@ -254,6 +254,10 @@ B. Schulz</text>
 <wire x1="-1.95" y1="-2.2" x2="-1.7" y2="-2.45" width="0.127" layer="21" curve="90"/>
 <circle x="-2.286" y="2.794" radius="0.179603125" width="0.127" layer="21"/>
 <text x="0" y="-3.048" size="0.6096" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<rectangle x1="0.127" y1="-1.651" x2="1.27" y2="-0.254" layer="31"/>
+<rectangle x1="-1.27" y1="0.254" x2="-0.127" y2="1.651" layer="31" rot="R180"/>
+<rectangle x1="0.127" y1="0.254" x2="1.27" y2="1.651" layer="31" rot="R180"/>
+<rectangle x1="-1.27" y1="-1.651" x2="-0.127" y2="-0.254" layer="31" rot="R180"/>
 </package>
 <package name="1X02_2.54_SCREWTERM_ROUND">
 <description>&lt;h3&gt;2 Pin Screw Terminal - 2.54mm&lt;/h3&gt;
@@ -649,9 +653,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="5.527" y1="10.734" x2="4.953" y2="10.16" width="0.6096" layer="1"/>
 <wire x1="5.527" y1="10.734" x2="7.874" y2="10.734" width="0.6096" layer="1"/>
 <polygon width="0.254" layer="1" rank="2">
-<vertex x="0.381" y="9.652"/>
-<vertex x="2.032" y="11.303"/>
-<vertex x="16.764" y="11.303"/>
+<vertex x="0.381" y="9.525"/>
+<vertex x="2.032" y="11.176"/>
+<vertex x="16.891" y="11.176"/>
 <vertex x="17.399" y="10.668"/>
 <vertex x="17.399" y="8.636"/>
 <vertex x="16.764" y="8.001"/>
@@ -709,8 +713,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="18.669" y="9.271"/>
 <vertex x="18.923" y="9.017"/>
 <vertex x="19.812" y="9.017"/>
-<vertex x="22.479" y="11.684"/>
-<vertex x="37.719" y="11.684"/>
+<vertex x="22.606" y="11.811"/>
+<vertex x="37.846" y="11.811"/>
 <vertex x="39.751" y="13.716"/>
 <vertex x="39.751" y="17.653"/>
 <vertex x="38.989" y="18.415"/>
@@ -718,10 +722,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="33.274" y="18.034"/>
 <vertex x="33.274" y="15.494"/>
 <vertex x="31.496" y="13.716"/>
-<vertex x="23.622" y="13.716"/>
-<vertex x="22.479" y="14.859"/>
-<vertex x="20.32" y="14.859"/>
-<vertex x="19.812" y="14.351"/>
+<vertex x="23.876" y="13.716"/>
+<vertex x="22.225" y="15.367"/>
+<vertex x="20.574" y="15.367"/>
+<vertex x="19.558" y="14.351"/>
 <vertex x="11.811" y="14.351"/>
 <vertex x="7.62" y="18.542"/>
 <vertex x="0.762" y="18.542"/>
@@ -763,8 +767,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="22.733" y="11.049"/>
 <vertex x="35.941" y="11.049"/>
 <vertex x="36.068" y="11.176"/>
-<vertex x="36.957" y="11.176"/>
-<vertex x="40.132" y="8.001"/>
+<vertex x="37.846" y="11.176"/>
+<vertex x="40.132" y="8.89"/>
 <vertex x="40.132" y="5.207"/>
 <vertex x="39.243" y="4.318"/>
 <vertex x="27.686" y="4.318"/>
