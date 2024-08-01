@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -108,15 +109,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -776,25 +802,32 @@ Current: 0.2A ~ 4.9A &lt;/p&gt;
 <pin name="VCC" x="-12.7" y="7.62" length="middle" direction="pwr"/>
 <pin name="GND" x="-12.7" y="-7.62" length="middle" direction="pwr"/>
 </symbol>
-<symbol name="SN74AUP1G34">
-<pin name="A" x="-12.7" y="0" visible="off" length="middle" direction="in"/>
-<pin name="Y" x="12.7" y="0" visible="off" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
-<pin name="VCC" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="2.286" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.286" x2="2.032" y2="0" width="0.254" layer="94"/>
-<wire x1="2.032" y1="0" x2="-1.27" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.286" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="2.032" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="0" y="-8.89" size="1.27" layer="95" align="center">&gt;NAME</text>
-<text x="0" y="6.35" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
+<symbol name="SN74AUP1G14">
+<pin name="VCC" x="-10.16" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="Y" x="10.16" y="0" visible="off" length="middle" direction="out" rot="R180"/>
+<pin name="A" x="-10.16" y="0" visible="off" length="middle" direction="in"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<circle x="3.302" y="0" radius="0.567959375" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="4.064" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-1.778" y1="-0.762" x2="-1.27" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.762" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.762" x2="-0.254" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-0.762" x2="-1.27" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.762" x2="-0.762" y2="0.762" width="0.254" layer="94"/>
 </symbol>
 <symbol name="CONN_03">
 <description>&lt;h3&gt;4 Pin Connection&lt;/h3&gt;</description>
@@ -969,26 +1002,31 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/en/products/detail/texa
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74LVC1G17" prefix="U">
-<description>&lt;b&gt;SN74LVC1G17&lt;/b&gt; - Single Schmitt Trigger Logic Buffer
+<deviceset name="SN74*1G14" prefix="U" uservalue="yes">
+<description>&lt;b&gt;SN74x1G14&lt;/b&gt; - Single Schmitt Triger Inverter
  
 &lt;p&gt;Characteristics:
 &lt;ul&gt;
-&lt;li&gt;VCC: 1.65~5.5V&lt;/li&gt;
-&lt;li&gt;Operating Temperature: -40°C to 125°C&lt;/li&gt;
-&lt;li&gt;Number of Gates: 1 /li&gt;
-&lt;li&gt; Inverting: No &lt;/li&gt;
-&lt;li&gt; 5V Tolerent Input (Down Shift)
+&lt;li&gt;VCC: 
+&lt;ul&gt;
+&lt;li&gt;AUP: 0.8 ~ 3.6V &lt;/li&gt;
+&lt;li&gt;LVC: 1.65 ~ 5.5V &lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 85°C (-40°C to 125°C for LVC Version)&lt;/li&gt;
+&lt;li&gt;f&lt;sub&gt;max&lt;/sub&gt; = 2.5 MHz (for Vcc =1.65v, high for higher Vcc) &lt;/li&gt;
+&lt;li&gt;Output Current = &amp;plusmn; 4 mA (&amp;plusmn; 32 mA for LVC Version) &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;
-
+ 
 &lt;p&gt;
-Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC1G17DCKR/296-11934-1-ND/389052"&gt;296-11934-1-ND (SC70, DCK) &lt;a&gt;&lt;br/&gt;
+Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74AUP1G14DCKR/296-19076-1-ND/864307"&gt; 296-19076-1-ND (AUP Low Voltage, SC-70)&lt;a&gt;&lt;br/&gt;
 
+&lt;a href = "https://www.digikey.com/product-detail/en/texas-instruments/SN74LVC1G14DCKR/296-11608-1-ND/385747"&gt; 296-47215-1-ND (LVC High Voltage, SC-70)&lt;a&gt;&lt;br/&gt;
+&lt;a href = "https://www.digikey.com/en/products/detail/texas-instruments/SN74LVC1G14DBVT/1592006"&gt; 296-26597-1-ND (LVC High Voltage, SOT-23)&lt;a&gt;&lt;br/&gt;
 
  &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="SN74AUP1G34" x="0" y="0"/>
+<gate name="G$1" symbol="SN74AUP1G14" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DCK" package="DCK_R-PDSO-G5">
@@ -1000,10 +1038,44 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="296-11934-1-ND" constant="no"/>
-<attribute name="DISP" value="SN74LVC1G17" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="SN74***1G14" constant="no"/>
 <attribute name="MF" value="TI" constant="no"/>
-<attribute name="MPN" value="SN74LVC1G17DCKR" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="AUP">
+<attribute name="DIGIKEY" value="296-19076-1-ND" constant="no"/>
+<attribute name="DISP" value="SN74AUP1G14" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74AUP1G14DCKR" constant="no"/>
+</technology>
+<technology name="LVC">
+<attribute name="DIGIKEY" value="296-11608-1-ND" constant="no"/>
+<attribute name="DISP" value="SN74LVC1G14" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74LVC1G14DCKR" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DBV" package="DBV0005A">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="SN74***1G14" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="LVC">
+<attribute name="DIGIKEY" value="296-26597-1-ND" constant="no"/>
+<attribute name="DISP" value="SN74LVC1G14" constant="no"/>
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="SN74LVC1G14DBVT" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6778,7 +6850,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <parts>
 <part name="U1" library="bschulz" deviceset="SN74LVC1G00" device="SC70"/>
 <part name="U2" library="bschulz" deviceset="SN74LVC2G241" device="DCU"/>
-<part name="U3" library="bschulz" deviceset="SN74LVC1G17" device="DCK"/>
+<part name="U3" library="bschulz" deviceset="SN74*1G14" device="DCK" technology="LVC"/>
 <part name="J2" library="bschulz" deviceset="CONN_3" device="2.54_SCREW"/>
 <part name="J1" library="bschulz" deviceset="CONN_6" device="SCREW_2.54"/>
 <part name="U5" library="bschulz" deviceset="LMR62014" device="SOT23"/>
@@ -6833,7 +6905,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </instance>
 <instance part="U3" gate="G$1" x="68.58" y="25.4" smashed="yes">
 <attribute name="NAME" x="68.58" y="16.51" size="1.27" layer="95" align="center"/>
-<attribute name="DISP" x="68.58" y="31.75" size="1.27" layer="95" ratio="15" align="center"/>
+<attribute name="DISP" x="68.58" y="34.29" size="1.27" layer="95" ratio="15" align="center"/>
 </instance>
 <instance part="J2" gate="G$1" x="7.62" y="104.14" smashed="yes">
 <attribute name="VALUE" x="2.54" y="99.314" size="1.778" layer="96" font="vector"/>
@@ -6981,7 +7053,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="55.88" y1="20.32" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="20.32" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="20.32" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
@@ -7024,8 +7096,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VCC"/>
-<wire x1="81.28" y1="20.32" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
-<label x="83.82" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="58.42" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<label x="53.34" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -7068,7 +7140,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="Y"/>
-<wire x1="81.28" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
 <label x="83.82" y="25.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
@@ -7215,7 +7287,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="A"/>
-<wire x1="55.88" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
 <label x="53.34" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
